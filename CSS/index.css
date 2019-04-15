@@ -198,6 +198,32 @@ header nav .navBar-items a {
 header nav .navBar-items a:hover {
   color: #fcfdfe;
 }
+.container .welcomeBox {
+  padding-top: 20px;
+  width: 50%;
+  height: 175px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+.container .welcomeBox p {
+  font-family: 'Franklin Gothic Medium';
+  font-size: 2.5rem;
+}
+.container .welcomeBox button {
+  text-decoration: none;
+  color: white;
+  font-size: 2rem;
+  background: darkred;
+  border-radius: 10px;
+  border: 1px solid black;
+  width: 200px;
+  height: 45px;
+}
+.container .welcomeBox button:hover {
+  background: white;
+  color: darkred;
+}
 .container .top-content {
   display: flex;
   margin: 10px 0;
@@ -215,6 +241,7 @@ header nav .navBar-items a:hover {
   justify-content: space-evenly;
   background-color: #fff;
   margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 .container .top-block .box {
   width: 20%;
@@ -236,6 +263,49 @@ header nav .navBar-items a:hover {
 }
 .container .featuredItems {
   display: flex;
-  margin: 0 20%;
+  width: 70%;
+  margin: 0 auto;
   justify-content: space-evenly;
+  padding-bottom: 20px;
+  border-bottom: 1px solid black;
+}
+.container .featuredItems img {
+  border-radius: 5px;
+  width: auto;
+  height: auto;
+}
+.container .featuredItems p {
+  text-align: center;
+  border-bottom: 1px solid black;
+}
+.container .whoAreWe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 2rem;
+  padding: 2rem;
+  margin: 3rem;
+  background: darkred;
+}
+.container .whoAreWe h3 {
+  color: white;
+  font-size: 2.5rem;
+}
+.container .whoAreWe p {
+  color: white;
+  font-family: 'Karla';
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  border-top: 1px solid black;
+  background: lightcoral;
+  width: 100%;
+  height: 40px;
+}
+footer p {
+  font-family: 'sans-serif';
 }
