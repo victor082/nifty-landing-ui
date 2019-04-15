@@ -134,14 +134,14 @@ html {
 }
 html,
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Anton', sans-serif;
 }
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: 'Indie Flower', cursive;
+  font-family: 'Karla', cursive;
 }
 h1 {
   font-size: 4rem;
@@ -164,7 +164,6 @@ img {
   height: auto;
 }
 .container {
-  background-color: gray;
   width: 100%;
   margin: 0 auto;
 }
@@ -172,11 +171,17 @@ header {
   background-color: darkred;
   padding: 6px 0;
 }
+header .main-head {
+  padding: 0;
+  margin: 200px 0;
+  display: flex;
+  justify-content: center;
+}
 header nav {
   text-align: left;
 }
 header nav .navBar-items {
-  width: 40%;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -193,60 +198,44 @@ header nav .navBar-items a {
 header nav .navBar-items a:hover {
   color: #fcfdfe;
 }
-.carousel {
-  position: relative;
-  height: 1000px;
-  width: 100%;
+.container .top-content {
+  display: flex;
+  margin: 10px 0;
+  padding-bottom: 20px;
+  justify-content: center;
+}
+.container .top-content h1 {
+  color: black;
+}
+.container .top-block {
+  border-bottom: 1px solid black;
   margin: 0 auto;
+  display: flex;
+  width: 70%;
+  justify-content: space-evenly;
+  background-color: #fff;
+  margin-bottom: 20px;
 }
-.carousel .carousel_track-container {
-  height: 100%;
-  position: relative;
+.container .top-block .box {
+  width: 20%;
+  text-align: center;
 }
-.carousel .carousel_track-container .carousel_track {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+.container .top-block h2 {
+  color: darkred;
 }
-.carousel .carousel_track-container .carousel_track .carousel_slide {
-  position: absolute;
-  width: 100%;
+.container .middle-content {
+  display: flex;
+  justify-content: center;
 }
-.carousel .carousel_track-container .carousel_track .carousel_slide img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
+.container .middle-content h1 {
+  color: black;
 }
-.carousel .backButton {
-  position: absolute;
-  top: 50%;
-  transform: translateY(50%);
-  background: transparent;
-  border: 0;
-  cursor: pointer;
-  left: 0;
+.container #featureSubText {
+  text-align: center;
+  color: darkred;
 }
-.carousel .backButton img {
-  width: 70px;
-}
-.carousel .nextButton {
-  right: 0;
-  position: absolute;
-  top: 50%;
-  transform: translateY(50%);
-  background: transparent;
-  border: 0;
-  cursor: pointer;
-}
-.carousel .nextButton img {
-  width: 70px;
-}
-.carousel .carousel_nav {
-  background: red;
-}
-.carousel .carousel_nav .carousel_indicator {
-  border: 0;
-  border-radius: 50%;
-  width: 15px;
-  margin: 0 15px;
+.container .featuredItems {
+  display: flex;
+  margin: 0 20%;
+  justify-content: space-evenly;
 }
