@@ -1,0 +1,35 @@
+.carousel {
+    position: relative;
+    height: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    .carousel_track-container {
+        height: 100%;
+        position: relative;
+        .carousel_track {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            .carousel_slide {
+                position: absolute;
+                width: 100%;
+                img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+    
+    }
+    .carousel_nav { 
+        background: red;
+        .carousel_indicator {
+        border: 0;
+        border-radius: 50%;
+        width: 15px;
+        margin: 0 15px;
+        }
+    }
+}
