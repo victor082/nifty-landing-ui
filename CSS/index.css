@@ -131,10 +131,11 @@ table {
 }
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 html,
 body {
-  font-family: 'Anton', sans-serif;
+  font-family: 'Merriweather', sans-serif;
 }
 h1,
 h2,
@@ -168,144 +169,215 @@ img {
   margin: 0 auto;
 }
 header {
-  background-color: darkred;
+  background-image: url("../Images/background-image.jpg");
+  background-repeat: no-repeat;
   padding: 6px 0;
+  text-align: center;
+  padding: 70px 0;
 }
 header .main-head {
   padding: 0;
-  margin: 200px 0;
+  margin: 117px auto;
   display: flex;
   justify-content: center;
 }
+header .arrow {
+  transition: transform 0.2;
+  opacity: 0.5;
+}
+header .arrow:hover {
+  transform: scale(1.3);
+}
 header nav {
-  text-align: left;
+  overflow: hidden;
+  opacity: 0.75;
 }
 header nav .navBar-items {
-  width: 100%;
+  background-color: #092438;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
-}
-header nav .navBar-items .navBarLogo {
-  width: 50px;
-  height: auto;
+  justify-content: flex-start;
 }
 header nav .navBar-items a {
-  font-size: 1.7rem;
+  margin: 0 auto;
+  font-size: 2rem;
+  color: #f2f2f2;
+  text-align: center;
   text-decoration: none;
-  color: #E7E7E7;
+}
+header nav .navBar-items a img {
+  height: 70px;
 }
 header nav .navBar-items a:hover {
   color: #fcfdfe;
 }
-.container .welcomeBox {
-  padding-top: 20px;
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.sticky + .content {
+  padding-top: 60px;
+}
+footer {
+  margin-top: 75px;
+  background: #333333;
+  color: white;
+  text-align: center;
+  font-family: "Karla";
+}
+footer .followTheTeam {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+footer .smIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer p a {
+  color: white;
+}
+footer p a:hover {
+  text-decoration: none;
+}
+.home .welcomeBox {
+  padding-top: 70px;
   width: 50%;
   height: 175px;
   display: block;
   margin: 0 auto;
   text-align: center;
 }
-.container .welcomeBox p {
-  font-family: 'Franklin Gothic Medium';
-  font-size: 2.5rem;
+@media (max-width: 500px) {
+  .home .welcomeBox {
+    margin: 0 auto;
+  }
 }
-.container .welcomeBox button {
+.home .welcomeBox p {
+  color: #3384c6;
+  font-family: 'Karla';
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+@media (max-width: 500px) {
+  .home .welcomeBox p {
+    margin: 0 auto;
+  }
+}
+.home .welcomeBox button {
   text-decoration: none;
+  font-family: "Karla";
   color: white;
   font-size: 2rem;
-  background: darkred;
-  border-radius: 10px;
+  background: #3384c6;
+  border-radius: 6px;
   border: 1px solid black;
   width: 200px;
   height: 45px;
 }
-.container .welcomeBox button:hover {
+.home .welcomeBox button:hover {
   background: white;
-  color: darkred;
+  color: #3384c6;
 }
-.container .top-content {
+.home .top-content {
   display: flex;
-  margin: 10px 0;
+  margin: 100px 10px 0;
   padding-bottom: 20px;
   justify-content: center;
 }
-.container .top-content h1 {
+@media (max-width: 500px) {
+  .home .top-content {
+    display: flex;
+    margin: 200px 0 auto;
+  }
+}
+.home .top-content h1 {
   color: black;
 }
-.container .top-block {
+.home .top-block {
   border-bottom: 1px solid black;
   margin: 0 auto;
   display: flex;
-  width: 70%;
+  width: 65%;
   justify-content: space-evenly;
-  background-color: #fff;
   margin-bottom: 20px;
   padding-bottom: 20px;
 }
-.container .top-block .box {
-  width: 20%;
+@media (max-width: 500px) {
+  .home .top-block {
+    padding: 0;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.home .top-block .box {
+  width: 100%;
   text-align: center;
 }
-.container .top-block h2 {
-  color: darkred;
+.home .top-block .box h2 {
+  color: #3384c6;
 }
-.container .middle-content {
+.home .top-block .box p {
+  font-family: "Karla";
+  color: #64b5f6;
+}
+@media (max-width: 500px) {
+  .home .top-block .box p {
+    margin: 0;
+    padding-bottom: 20px;
+    width: 100%;
+  }
+}
+.home .middle-content {
   display: flex;
   justify-content: center;
 }
-.container .middle-content h1 {
+.home .middle-content h1 {
+  color: #3384c6;
+}
+.home #featureSubText {
+  text-align: center;
   color: black;
+  font-family: 'Karla';
 }
-.container #featureSubText {
-  text-align: center;
-  color: darkred;
-}
-.container .featuredItems {
+.home .bottomSection {
+  margin-top: 50px;
   display: flex;
-  width: 70%;
-  margin: 0 auto;
   justify-content: space-evenly;
-  padding-bottom: 20px;
-  border-bottom: 1px solid black;
 }
-.container .featuredItems img {
-  border-radius: 5px;
-  width: auto;
-  height: auto;
+@media (max-width: 500px) {
+  .home .bottomSection {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
 }
-.container .featuredItems p {
-  text-align: center;
-  border-bottom: 1px solid black;
-}
-.container .whoAreWe {
+.home .bottomSection .whoAreWe {
   display: flex;
+  width: 49.5%;
   flex-direction: column;
   align-items: center;
-  border: 2px solid black;
-  border-radius: 2rem;
   padding: 2rem;
-  margin: 3rem;
-  background: darkred;
+  margin: 10px 2rem 2rem;
+  background-color: #3384c6;
 }
-.container .whoAreWe h3 {
+@media (max-width: 500px) {
+  .home .bottomSection .whoAreWe {
+    width: 95%;
+  }
+}
+.home .bottomSection .whoAreWe h3 {
   color: white;
   font-size: 2.5rem;
 }
-.container .whoAreWe p {
+.home .bottomSection .whoAreWe p {
+  margin-top: 3rem;
   color: white;
   font-family: 'Karla';
-}
-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 50px;
-  border-top: 1px solid black;
-  background: lightcoral;
-  width: 100%;
-  height: 40px;
-}
-footer p {
-  font-family: 'sans-serif';
 }
