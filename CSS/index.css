@@ -189,14 +189,16 @@ header .arrow:hover {
   transform: scale(1.3);
 }
 header nav {
-  overflow: hidden;
   opacity: 0.75;
+  position: relative;
+  z-index: 10;
 }
 header nav .navBar-items {
   background-color: #092438;
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  z-index: 1000;
 }
 header nav .navBar-items a {
   margin: 0 auto;
@@ -380,4 +382,33 @@ footer p a:hover {
   margin-top: 3rem;
   color: white;
   font-family: 'Karla';
+}
+.teamContainer header {
+  background-image: none;
+}
+.teamContainer header nav {
+  opacity: 1;
+}
+.teamContainer .meetTheTeam {
+  margin: 0 5%;
+}
+.teamContainer .card {
+  margin: 0 5%;
+}
+.teamContainer .card h3 {
+  font-size: 2rem;
+}
+.teamContainer .card h4 {
+  font-size: 1.2rem;
+  color: #3384c6;
+}
+.teamContainer .card .btn {
+  background-color: white;
+  border: none;
+}
+.teamContainer .card .btn .btn-primary {
+  background: none;
+}
+.teamContainer .card .btn:hover {
+  border: 1px solid #3384c6;
 }
