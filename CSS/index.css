@@ -182,6 +182,7 @@ header .main-head {
   justify-content: center;
 }
 header .arrow {
+  margin-top: 20px;
   transition: transform 0.2;
   opacity: 0.5;
 }
@@ -223,6 +224,7 @@ header nav .navBar-items a:hover {
 }
 footer {
   margin-top: 75px;
+  padding: 20px 0;
   background: #333333;
   color: white;
   text-align: center;
@@ -260,6 +262,7 @@ footer p a:hover {
   }
 }
 .home .welcomeBox p {
+  letter-spacing: 3px;
   color: #3384c6;
   font-family: 'Karla';
   font-size: 2.5rem;
@@ -286,6 +289,7 @@ footer p a:hover {
   color: #3384c6;
 }
 .home .top-content {
+  letter-spacing: 10px;
   display: flex;
   margin: 100px 10px 0;
   padding-bottom: 20px;
@@ -360,7 +364,7 @@ footer p a:hover {
     align-items: center;
   }
 }
-.home .bottomSection .whoAreWe {
+.home .bottomSection .infoBox {
   display: flex;
   width: 49.5%;
   flex-direction: column;
@@ -370,18 +374,23 @@ footer p a:hover {
   background-color: #3384c6;
 }
 @media (max-width: 500px) {
-  .home .bottomSection .whoAreWe {
+  .home .bottomSection .infoBox {
     width: 95%;
   }
 }
-.home .bottomSection .whoAreWe h3 {
+.home .bottomSection .infoBox h3 {
+  letter-spacing: 8px;
   color: white;
   font-size: 2.5rem;
+  border-bottom: 1px solid white;
 }
-.home .bottomSection .whoAreWe p {
+.home .bottomSection .infoBox p {
   margin-top: 3rem;
   color: white;
   font-family: 'Karla';
+}
+.teamContainer {
+  height: 800px;
 }
 .teamContainer header {
   background-image: none;
@@ -392,23 +401,26 @@ footer p a:hover {
 .teamContainer .meetTheTeam {
   margin: 0 5%;
 }
-.teamContainer .card {
+.teamContainer .cardLayout {
+  display: flex;
+}
+.teamContainer .cardLayout .card {
   margin: 0 5%;
 }
-.teamContainer .card h3 {
+.teamContainer .cardLayout .card h3 {
   font-size: 2rem;
 }
-.teamContainer .card h4 {
+.teamContainer .cardLayout .card h4 {
   font-size: 1.2rem;
   color: #3384c6;
 }
-.teamContainer .card .btn {
+.teamContainer .cardLayout .card .btn {
   background-color: white;
   border: none;
 }
-.teamContainer .card .btn .btn-primary {
+.teamContainer .cardLayout .card .btn .btn-primary {
   background: none;
 }
-.teamContainer .card .btn:hover {
+.teamContainer .cardLayout .card .btn:hover {
   border: 1px solid #3384c6;
 }
