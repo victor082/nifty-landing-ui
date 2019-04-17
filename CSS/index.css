@@ -175,35 +175,41 @@ img {
   height: 100%;
   min-width: 1000px;
 }
+@media (max-width: 500px) {
+  .headerBG {
+    height: 60%;
+  }
+}
 .headerContent {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.headerContent nav {
+nav {
   display: flex;
   align-items: center;
   font-size: 1.8rem;
   font-family: "Roboto";
   opacity: 0.85;
 }
-.headerContent .main-head {
+.main-head {
   padding: 0;
   margin: 117px auto;
 }
-.headerContent .navArrow {
+.navArrow {
+  opacity: 0.5;
   position: relative;
 }
 @media (max-width: 500px) {
-  .headerContent .navArrow {
+  .navArrow {
     top: -100px;
   }
 }
-.headerContent .navArrow .arrow {
+.navArrow .arrow {
   transition: transform 0.2;
   opacity: 0.5;
 }
-.headerContent .navArrow .arrow:hover {
+.navArrow .arrow:hover {
   transform: scale(1.3);
 }
 .navbar-brand {
@@ -223,12 +229,20 @@ img {
   }
 }
 footer {
+  position: relative;
+  width: 100%;
+  bottom: 0;
   margin-top: 75px;
   padding: 20px 0;
   background: #333333;
   color: white;
   text-align: center;
   font-family: "Karla";
+}
+@media (max-width: 1350px) {
+  footer {
+    position: fixed;
+  }
 }
 footer .followTheTeam {
   width: 100%;
@@ -348,6 +362,7 @@ footer p a:hover {
   }
 }
 .home .middle-content {
+  margin-top: 100px;
   display: flex;
   justify-content: center;
 }
@@ -396,24 +411,85 @@ footer p a:hover {
   color: white;
   font-family: 'Karla';
 }
+.accordionWrapper {
+  text-align: center;
+  padding: 30px;
+  background: #fff;
+  width: 80%;
+  box-sizing: border-box;
+  margin: 0 auto;
+  margin-bottom: 200px;
+}
+@media (max-width: 500px) {
+  .accordionWrapper {
+    width: 100%;
+  }
+}
+.accordionItem {
+  width: 100%;
+  box-sizing: border-box;
+  font-family: 'Roboto';
+}
+.accordionItemHeading {
+  cursor: pointer;
+  margin: 0px 0px 10px 0px;
+  padding: 10px;
+  background: #2980b9;
+  color: #fff;
+  width: 100%;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+.close .accordionItemContent {
+  height: 0px;
+  transition: height 1s ease-out;
+  transform: scaleY(0);
+}
+.open .accordionItemContent {
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  width: 100%;
+  margin: 0px 0px 10px 0px;
+  display: block;
+  transform: scaleY(1);
+  box-sizing: border-box;
+}
+.open .accordionItemHeading {
+  margin: 0px;
+  background-color: #bdc3c7;
+  color: #7f8c8d;
+}
 .teamContainer {
   height: 800px;
 }
-.teamContainer header {
-  background-image: none;
-}
-.teamContainer header nav {
-  opacity: 1;
+.teamContainer nav {
+  opacity: 0.95;
 }
 .teamContainer .meetTheTeam {
-  margin: 0 5%;
-  margin-bottom: 20px;
+  margin: 100px 0 5% 5%;
+}
+.teamContainer .meetTheTeam h1 {
+  color: black;
 }
 .teamContainer .cardLayout {
   display: flex;
 }
+@media (max-width: 1350px) {
+  .teamContainer .cardLayout {
+    align-items: center;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+}
 .teamContainer .cardLayout .card {
   margin: 0 5%;
+}
+@media (max-width: 1350px) {
+  .teamContainer .cardLayout .card {
+    margin-bottom: 30px;
+  }
 }
 .teamContainer .cardLayout .card h3 {
   font-size: 2rem;

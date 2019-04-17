@@ -1,10 +1,16 @@
 footer {
+    position: relative;
+    width: 100%;
+    bottom: 0;
     margin-top: 75px;
     padding: 20px 0;
     background: #333333;
     color: white;
     text-align: center;
     font-family: "Karla";
+    @media(max-width: 1350px) {
+        position: fixed;
+    }
     .followTheTeam {
         width: 100%;
         display: flex;

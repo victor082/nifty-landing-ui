@@ -1,19 +1,27 @@
 .teamContainer {
     height: 800px;
-    header {
-        background-image: none;
-        nav {
-            opacity: 1;
-        }
+    nav {
+        opacity: .95;
     }
     .meetTheTeam {
-        margin: 0 5%;
-        margin-bottom: 20px;
+        margin: 100px 0 5% 5%;
+        h1 {
+            color: black;
+        }
     }
     .cardLayout {
+        @media(max-width: 1350px) {
+            align-items: center;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+        }
         display: flex;
         .card {
             margin: 0 5%;
+            @media(max-width: 1350px) {
+                margin-bottom: 30px;
+            }
             h3 {
                 font-size: 2rem;
             }
