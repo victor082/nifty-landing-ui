@@ -1,54 +1,84 @@
-header {
-    background-image: url("../Images/background-image.jpg");
-    background-repeat: no-repeat;
-    padding: 6px 0;
-    text-align: center;
-    padding: 70px 0;
+.headerBG {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    min-width: 1000px;
+}
+.headerContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    nav {
+        display: flex;
+        align-items: center;
+        font-size: 1.8rem;
+        font-family: "Roboto";
+        opacity: 0.85;
+    }
     .main-head {
         padding: 0;
         margin: 117px auto;
-        display: flex;
-        justify-content: center;
     }
-    .arrow {
-        margin-top: 20px;
-        transition: transform .2;
-        opacity: .5;
-    }
-    .arrow:hover {
-        transform: scale(1.3);
-    }
-    nav {
-        opacity: 0.75;
+    .navArrow {
         position: relative;
-        z-index: 10;
-        .navBar-items{
-            background-color: #092438;
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-            z-index: 1000;
-            a {
-                margin: 0 auto;
-                font-size: 2rem;
-                color: #f2f2f2;
-                text-align: center;
-                text-decoration: none;
-                img {
-                    height: 70px;
-                }
-            }
-            a:hover {
-                color: @font-color;
-            }
+        @media(max-width: 500px) {
+            top: -100px;
+        }
+        .arrow {
+            transition: transform .2;
+            opacity: .5;
+        }
+        .arrow:hover {
+            transform: scale(1.3);
         }
     }
 }
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
-  .sticky + .content {
-    padding-top: 60px;
-  }
+
+.navbar-brand {
+    margin-left: 0;
+    @media(max-width: 900px) {
+        margin: 0 auto;
+    }
+    .navLogo {
+        width: 40px;
+        @media(max-width: 900px) {
+            width: 80px;
+        }
+    }
+}
+
+//     nav {
+//         opacity: 0.75;
+//         position: relative;
+//         z-index: 10;
+//         .navBar-items{
+//             background-color: #092438;
+//             display: flex;
+//             align-items: center;
+//             justify-content: flex-start;
+//             z-index: 1000;
+//             a {
+//                 margin: 0 auto;
+//                 font-size: 2rem;
+//                 color: #f2f2f2;
+//                 text-align: center;
+//                 text-decoration: none;
+//                 img {
+//                     height: 70px;
+//                 }
+//             }
+//             a:hover {
+//                 color: @font-color;
+//             }
+//         }
+//     }
+// }
+// .sticky {
+//     position: fixed;
+//     top: 0;
+//     width: 100%;
+//   }
+//   .sticky + .content {
+//     padding-top: 60px;
+//   }

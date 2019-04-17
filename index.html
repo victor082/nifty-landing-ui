@@ -7,38 +7,57 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Merriweather|Karla" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nifty Markets</title>
     <link rel="stylesheet" href="CSS/index.css">
+    <script src="Javascript/home-page.js" async></script>
+    <script src="Javascript/navigation.js" async></script>
 </head>
 
 <body>
     <div class="home">
         <header>
-            <div class="main-head">
-                <img src="Images/NiftyMarkets.png" alt="NiftyMarkets">
+            <img class="headerBG" src="Images/background-image2.jpg">
+            <div class="headerContent">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+                    <a class="navbar-brand" href="index.html"><img src="Images/Logo.png" class="navLogo" alt="Logo"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                      <ul class="navbar-nav">
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Buy & Sell</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="ourteam.html">Our Team</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </nav>
+                  <div class="main-head">
+                    <img src="Images/NiftyMarkets.png" alt="NiftyMarkets">
+                  </div>
+                  <a href="#navJump" class="navArrow"><img class="arrow" src="Images/sort-down.svg"  height="40" width="40">
+                  </a>
             </div>
-            <a href="#navJump"><img class="arrow" src="Images/sort-down.svg"  height="40" width="40">
-            </a>
-            <div class="navigation">
-                <div class="navBar" id="navJump">
-                    <nav>
-                        <div class="navBar-items sticky">
-                          <a href ="index.html"><img src="Images/Logo.png"></a>
-                            <a href="#">Home</a>
-                            <a href="#">About Us</a>
-                            <a href="#">Buy & Sell</a>
-                            <a href="#">Our Team</a>
-                        </div>
-                    </nav>
-                </div>
+          
         </header>
 
          <div class="welcomeBox">
-         <p>Welcome to Nifty Markets, home of the largest Marketplace for virtual goods!</p>
+           <div id="navJump"></div>
+         <p class="niftyMarketline">Welcome to Nifty Markets</p><br>
+         <p>Home of the largest Marketplace for virtual goods!</p>
         
-         <button class="signUpBtn">SIGN UP HERE!</button>
+         <button class="signUpBtn">GET STARTED</button>
         </div>
 
          <div class="top-content">
@@ -87,20 +106,21 @@
 
             </section>
             <div class="bottomSection">
+              
             <div class="infoBox">
-                <h3>Who Are We</h3>
+                <h3>Who We Are</h3>
                 <p>Lorem ipsum dolor sit amet, ut lvamus nisl ligula, laoreet at metus sed, Maecenas iaculis dui ullamcorper, rhoncus elit quis, porta odio. Aliquam erat volutpat. Aenean sodales consectetur nisi, nec venenatis mauris ullamcorper a. Morbi id enim ullamcorper augue suscipit consectetur a a turpis. Etiam vel urna convallis, lacinia sem ut, lobortis eros. Praesent eget pellentesque massa. Aenean ullamcorper neque eu magna pharetra, et lobortis tellus tincidunt. Suspendisse eu eros mi. Curabitur urna enim, faucibus congue quam volutpat, malesuada fermentum odio. Curabitur aliquam augue erat, fermentum egestas quam congue non. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
             </div>
             <div class="avatarLogo"><img src="/Images/contactpic.png"></div>
         </div>
-        <div class="bottomSection">
+        <div class="bottomSection" id="bottomSect2">
             <div class="avatarLogo"><img src="/Images/ourgoalpic.png"></div>
             <div class="infoBox">
                 <h3>Our Goal</h3>
                 <p>Lorem ipsum dolor sit amet, ut lvamus nisl ligula, laoreet at metus sed, Maecenas iaculis dui ullamcorper, rhoncus elit quis, porta odio. Aliquam erat volutpat. Aenean sodales consectetur nisi, nec venenatis mauris ullamcorper a. Morbi id enim ullamcorper augue suscipit consectetur a a turpis. Etiam vel urna convallis, lacinia sem ut, lobortis eros. Praesent eget pellentesque massa. Aenean ullamcorper neque eu magna pharetra, et lobortis tellus tincidunt. Suspendisse eu eros mi. Curabitur urna enim, faucibus congue quam volutpat, malesuada fermentum odio. Curabitur aliquam augue erat, fermentum egestas quam congue non. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
             </div>
         </div>
-  
+        </div>
 </body>
 
 <footer>
@@ -116,3 +136,21 @@
 </footer>
 
 </html>
+
+<!-- <div class="navBar" >
+                <nav>
+                    <div class="navBar-items sticky">
+                      <a href ="index.html"><img src="Images/Logo.png"></a>
+                        <a href="#">Home</a>
+                        <a href="#">About Us</a>
+                        <a href="#">Buy & Sell</a>
+                        <a href="ourteam.html">The Team</a>
+                    </div>
+                </nav>
+            </div>
+            <div class="main-head">
+                <img src="Images/NiftyMarkets.png" alt="NiftyMarkets">
+            </div>
+            <a href="#navJump"><img class="arrow" src="Images/sort-down.svg"  height="40" width="40">
+            </a>
+            <div class="navigation"> -->

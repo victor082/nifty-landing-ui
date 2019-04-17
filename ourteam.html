@@ -35,15 +35,28 @@
   <body>
     <div class="teamContainer">
       <header>
-        <nav>
-          <div class="navBar-items sticky">
-            <a href="index.html"><img src="Images/Logo.png"/></a>
-            <a href="#">Home</a>
-            <a href="#">About Us</a>
-            <a href="#">Buy & Sell</a>
-            <a href="#">Our Team</a>
-          </div>
-        </nav>
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+              <a class="navbar-brand" href="index.html"><img src="Images/Logo.png" class="navLogo" alt="Logo"></a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Buy & Sell</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="ourteam.html">Our Team</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
       </header>
 
       <div class="meetTheTeam">
@@ -52,40 +65,42 @@
       </div>
 
       <div class="cardLayout">
-
-      <div class="card" style="width: 25rem;">
-        <img src="Images/victorpic1.JPG" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h3 class="card-title">Victor Nguyen</h3>
-          <h4>UI DEVELOPER</h4>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-          <a href="#" class="btn btn-primary"
-            ><img src="Images/github-sign.svg" height="20" width="20"
-          /></a>
-          <a href="#" class="btn btn-primary"
-            ><img src="Images/linkedin.svg" height="20" width="20"
-          /></a>
-          <a href="#" class="btn btn-primary"
-            ><img
-              src="Images/twitter-logo-on-black-background.svg"
-              height="20"
-              width="20"
-          /></a>
-        </div>
-      </div>
-      <div class="card" style="width: 25rem;">
-            <img src="Images/jamespic.png" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h3 class="card-title">James Starks</h3>
-              <h4>UI DEVELOPER</h4>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up the
-                bulk of the card's content.
-              </p>
-              <a href="#" class="btn btn-primary"
+        <div class="card" style="width: 25rem;">
+          <img src="Images/victorpic1.JPG" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h3 class="card-title">Victor Nguyen</h3>
+            <h4>UI DEVELOPER</h4>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <div class="smButtons">
+              <a href="https://github.com/victor082" target="_blank" class="btn btn-primary"
+                ><img src="Images/github-sign.svg" height="20" width="20"
+              /></a>
+              <a href="https://www.linkedin.com/in/victor-nguyen-bb5898177/" target="_blank" class="btn btn-primary"
+                ><img src="Images/linkedin.svg" height="20" width="20"
+              /></a>
+              <!-- <a href="#" class="btn btn-primary"
+                ><img
+                  src="Images/twitter-logo-on-black-background.svg"
+                  height="20"
+                  width="20"
+              /></a> -->
+            </div>
+          </div>
+        </div> <!--Victor-->
+        <div class="card" style="width: 25rem;">
+          <img src="Images/jamespic.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h3 class="card-title">James Starks</h3>
+            <h4>UI DEVELOPER</h4>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <div class="smButtons">
+              <a href="https://github.com/Shadowborn" target="_blank" class="btn btn-primary"
                 ><img src="Images/github-sign.svg" height="20" width="20"
               /></a>
               <a href="#" class="btn btn-primary"
@@ -99,44 +114,117 @@
               /></a>
             </div>
           </div>
-          <div class="card" style="width: 25rem;">
-                <img src="Images/brandonpic.jpg" class="card-img-top" alt="..." />
+        </div> <!--James-->
+        <div class="card" style="width: 25rem;">
+          <img src="Images/brandonpic.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h3 class="card-title">Brandon Vilaychith</h3>
+            <h4>TEAM LEAD</h4>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <div class="smButtons">
+              <a href="https://github.com/BrandonVilaychith" target="_blank" class="btn btn-primary"
+                ><img src="Images/github-sign.svg" height="20" width="20"
+              /></a>
+              <a href="https://www.linkedin.com/in/brandon-vilaychith-175348149/" target="_blank" class="btn btn-primary"
+                ><img src="Images/linkedin.svg" height="20" width="20"
+              /></a>
+              <!-- <a href="#" class="btn btn-primary"
+                ><img
+                  src="Images/twitter-logo-on-black-background.svg"
+                  height="20"
+                  width="20"
+              /></a> -->
+            </div>
+          </div>
+        </div> <!--Brandon-->
+        <div class="card" style="width: 25rem;">
+                <img src="Images/joshuapic.jpg" class="card-img-top" alt="..." />
                 <div class="card-body">
-                  <h3 class="card-title">James Starks</h3>
-                  <h4>TEAM LEAD</h4>
+                  <h3 class="card-title">Joshua Harris</h3>
+                  <h4>FRONT-END DEV</h4>
                   <p class="card-text">
                     Some quick example text to build on the card title and make up the
                     bulk of the card's content.
                   </p>
-                  <a href="#" class="btn btn-primary"
-                    ><img src="Images/github-sign.svg" height="20" width="20"
-                  /></a>
-                  <a href="#" class="btn btn-primary"
-                    ><img src="Images/linkedin.svg" height="20" width="20"
-                  /></a>
-                  <a href="#" class="btn btn-primary"
-                    ><img
-                      src="Images/twitter-logo-on-black-background.svg"
-                      height="20"
-                      width="20"
-                  /></a>
+                  <div class="smButtons">
+                    <a href="https://github.com/x-zen" target="_blank" class="btn btn-primary"
+                      ><img src="Images/github-sign.svg" height="20" width="20"
+                    /></a>
+                    <a href="#" class="btn btn-primary"
+                      ><img src="Images/linkedin.svg" height="20" width="20"
+                    /></a>
+                    <a href="#" class="btn btn-primary"
+                      ><img
+                        src="Images/twitter-logo-on-black-background.svg"
+                        height="20"
+                        width="20"
+                    /></a>
+                  </div>
                 </div>
-              </div>
+              </div> <!--Joshua-->
+              <div class="card" style="width: 25rem;">
+                    <img src="Images/jordan.jpg" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                      <h3 class="card-title">Jordan Spell</h3>
+                      <h4>BACK-END DEV</h4>
+                      <p class="card-text">
+                        Some quick example text to build on the card title and make up the
+                        bulk of the card's content.
+                      </p>
+                      <div class="smButtons">
+                        <a href="https://github.com/jdspell" target="_blank" class="btn btn-primary"
+                          ><img src="Images/github-sign.svg" height="20" width="20"
+                        /></a>
+                        <a href="#" class="btn btn-primary"
+                          ><img src="Images/linkedin.svg" height="20" width="20"
+                        /></a>
+                        <a href="#" class="btn btn-primary"
+                          ><img
+                            src="Images/twitter-logo-on-black-background.svg"
+                            height="20"
+                            width="20"
+                        /></a>
+                      </div>
+                    </div>
+                  </div> <!--Jordan-->
 
-        </div>
-
-    </div>
+      </div> <!--Card layout--> 
+    </div> <!--container-->
   </body>
 
   <footer>
-        <div class="followTheTeam">
-          <h2>Follow The Team</h2></div>
-        <div class="smIcon githubFooter">
-        <img src="Images/github-sign.svg" height="40" width="40">
-      </div>
-      <p><a href="https://github.com/BrandonVilaychith" target="_blank">BRANDON</a> | <a href="https://github.com/jdspell" target="_blank">JORDAN</a> | <a href="https://github.com/x-zen" target="_blank">JOSHUA</a> | <a href="https://github.com/Shadowborn" target="_blank">JAMES</a> | <a href="https://github.com/victor082" target="_blank">VICTOR</a> </p>
-      
-      <h3>©2019 NIFTY MARKETS, INC. ALL RIGHTS RESERVED.</h3> <br>
-      <h3>All trademarks referenced herein are the properties of their respective owners.</h3>
-      </footer>
+    <div class="followTheTeam">
+      <h2>Follow The Team</h2>
+    </div>
+    <div class="smIcon githubFooter">
+      <img src="Images/github-sign.svg" height="40" width="40" />
+    </div>
+    <p>
+      <a href="https://github.com/BrandonVilaychith" target="_blank">BRANDON</a>
+      | <a href="https://github.com/jdspell" target="_blank">JORDAN</a> |
+      <a href="https://github.com/x-zen" target="_blank">JOSHUA</a> |
+      <a href="https://github.com/Shadowborn" target="_blank">JAMES</a> |
+      <a href="https://github.com/victor082" target="_blank">VICTOR</a>
+    </p>
+
+    <h3>©2019 NIFTY MARKETS, INC. ALL RIGHTS RESERVED.</h3>
+    <br />
+    <h3>
+      All trademarks referenced herein are the properties of their respective
+      owners.
+    </h3>
+  </footer>
 </html>
+
+<!--        <nav>
+          <div class="navBar-items sticky">
+            <a href="index.html"><img src="Images/Logo.png"/></a>
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Buy & Sell</a>
+            <a href="ourteam.html">The Team</a>
+          </div>
+        </nav>-->

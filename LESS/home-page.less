@@ -1,23 +1,28 @@
 .home { 
     .welcomeBox {
-        padding-top: 70px;
-        width: 50%;
+        padding-top: 80px;
+        width: 80%;
         height: 175px;
         display: block;
         margin: 0 auto;
         text-align: center;
         @media(max-width: 500px) {
-            margin: 0 auto;
+            width: 80%;
+            padding-top: 250px;
         }
         p {
             letter-spacing: 3px;
             color: #3384c6;
             font-family: 'Karla';
             font-size: 2.5rem;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
             @media(max-width: 500px) {
                 margin: 0 auto;
             }
+        }
+        .niftyMarketline {
+            margin-top: 120px;
+            color: silver;
         }
         button {
             text-decoration: none;
@@ -26,27 +31,27 @@
             font-size: 2rem;
             background: #3384c6;
             border-radius: 6px;
-            border: 1px solid black;
+            border: 1px solid #64b5f6;
             width: 200px;
             height: 45px;
         }
-        button:hover {
-            background: white;
-            color: #3384c6;
-        }
     }
     .top-content {
-        letter-spacing: 10px;
+        letter-spacing: 5px;
         display: flex;
-        margin: 100px 10px 0;
+        margin: 370px 10px 0;
         padding-bottom: 20px;
         justify-content: center;
         @media (max-width: 500px) {
             display: flex;
-            margin: 200px 0 auto;
+            margin: 430px 0 auto;
         }
         h1 {
             color: black;
+            @media(max-width: 900px) {
+                margin-top: 60px;
+                margin-bottom: 20px;
+            }
         }
     }
     .top-block {
