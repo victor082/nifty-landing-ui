@@ -193,6 +193,9 @@ nav {
   font-family: "Roboto";
   opacity: 0.85;
 }
+nav img:hover {
+  transform: scale(1.15);
+}
 .main-head {
   padding: 0;
   margin: 117px 0;
