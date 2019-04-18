@@ -217,12 +217,6 @@ nav {
     top: -100px;
   }
 }
-.navArrow p {
-  transition: transform 0.2;
-  transition: all 1s;
-  opacity: 0.5;
-  animation: fadein 5s;
-}
 .navArrow .arrow {
   transition: transform 0.2;
   transition: all 1s;
