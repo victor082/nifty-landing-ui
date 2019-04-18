@@ -9,6 +9,10 @@
         @media(max-width: 500px) {
             width: 100%;
         }
+        .niftyMarketline {
+            margin-top: 120px;
+            color: silver;
+        }
         p {
             letter-spacing: 3px;
             color: #3384c6;
@@ -19,20 +23,22 @@
                 margin: 0 auto;
             }
         }
-        .niftyMarketline {
-            margin-top: 120px;
-            color: silver;
-        }
         button {
             text-decoration: none;
             font-family: "Karla";
             color: white;
             font-size: 2rem;
-            background: #3384c6;
+            background: linear-gradient(to right, #3384c6, #25b7c4);
+            background:gradient(left, #3384c6, #25b7c4);
             border-radius: 6px;
             border: 1px solid #64b5f6;
             width: 200px;
             height: 45px;
+            transition: transform .2;
+            transition: all 1s;
+        }
+        button:hover {
+            transform: scale(1.2);
         }
     }
     .top-content {
@@ -46,10 +52,13 @@
             margin: 250px 0 auto;
         }
         h1 {
-            color: black;
+            background: linear-gradient(to right, #3384c6, #25b7c4);
+            background:gradient(left, #3384c6, #25b7c4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
             @media(max-width: 900px) {
-                margin-top: 60px;
-                margin-bottom: 20px;
+            margin-top: 60px;
+            margin-bottom: 20px;
             }
         }
     }
@@ -71,16 +80,27 @@
         .box {
             width: 100%;
             text-align: center;
+            img {
+                transition: transform .2;
+                transition: all 1s;
+            }
+            img:hover {
+                transform: scale(1.2);
+                opacity: .9;
+            }
             h2 {
-                color: #3384c6;
+                background: linear-gradient(to right, #3384c6, #25b7c4);
+                background:gradient(left, #3384c6, #25b7c4);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
             }
             p {
                 font-family: "Karla";
                 color: #64b5f6;
                 @media(max-width: 500px) {
-                    margin: 0;
-                    padding-bottom: 20px;
-                    width: 100%;
+                margin: 0;
+                padding-bottom: 20px;
+                width: 100%;
                 }
             }
         }
@@ -90,7 +110,10 @@
         display: flex;
         justify-content: center;
         h1 {
-            color: #3384c6;;
+            background: linear-gradient(to right, #3384c6, #25b7c4);
+            background:gradient(left, #3384c6, #25b7c4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
     }
     #featureSubText {
@@ -144,17 +167,14 @@
         width: 100%;
     }
 }
-.accordionItem{
-    width:100%;
-    box-sizing: border-box;
-    font-family:'Roboto';
-}
+
 .accordionItemHeading{
     letter-spacing: 5px;
     cursor:pointer;
     margin:0px 0px 10px 0px;
     padding:10px;
-    background:#2980b9;
+    background:gradient(left, #3384c6, #25b7c4);
+    background: linear-gradient(to right, #3384c6, #25b7c4);
     color:#fff;
     width:100%;
     border-radius: 3px;
@@ -163,7 +183,7 @@
 .close .accordionItemContent{
     height:0px;
     transition:height 1s ease-out;
-	transform: scaleY(0);
+    transform: scaleY(0);
 }
 .open .accordionItemContent{
     padding: 20px;
@@ -171,13 +191,13 @@
     border: 1px solid #ddd;
     width: 100%;
     margin: 0px 0px 10px 0px;
-    display:block;
+    display: block;
 	transform: scaleY(1);
-        box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .open .accordionItemHeading{
     margin:0px;
     background-color: #bdc3c7;
-    color: #7f8c8d;
+    color: #b5deff;
 }

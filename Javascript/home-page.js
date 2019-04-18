@@ -5,7 +5,8 @@ button.addEventListener('mouseenter', (event) => {
     button.innerHTML = 'SIGN UP'
   })
   button.addEventListener('mouseleave', (event) => {
-    button.style.background = '#3384c6'
+    button.style.background = 'linear-gradient(to right, #3384c6, #25b7c4)'
+    button.style.background = 'gradient(left, #3384c6, #25b7c4)'
     button.style.color = 'white'
     button.innerHTML = 'GET STARTED'
   })
@@ -23,3 +24,4 @@ button.addEventListener('mouseenter', (event) => {
           this.parentNode.className = 'accordionItem open';
       }
   }
+  
