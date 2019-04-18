@@ -1,17 +1,12 @@
-// // When the user scrolls the page, execute myFunction 
-// window.onscroll = function() {myFunction()};
-
-// // Get the navbar
-// var navbar = document.getElementById("navbar");
-
-// // Get the offset position of the navbar
-// var sticky = navbar.offsetTop;
-
-// // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-// function myFunction() {
-//   if (window.pageYOffset >= sticky) {
-//     navbar.classList.add("sticky")
-//   } else {
-//     navbar.classList.remove("sticky");
-//   }
-// }
+let button = document.querySelector('.welcomeBox .signUpBtn')
+button.addEventListener('mouseenter', (event) => {
+    button.style.background = 'white'
+    button.style.color = '#3384c6'
+    button.innerHTML = 'SIGN UP'
+  })
+  button.addEventListener('mouseleave', (event) => {
+    button.style.background = 'linear-gradient(to right, #3384c6, #25b7c4)'
+    button.style.background = 'gradient(left, #3384c6, #25b7c4)'
+    button.style.color = 'white'
+    button.innerHTML = 'GET STARTED'
+  })

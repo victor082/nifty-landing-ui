@@ -195,7 +195,7 @@ nav {
 }
 .main-head {
   padding: 0;
-  margin: 117px auto;
+  margin: 117px 0;
   position: relative;
   animation: heading;
   animation-duration: 3s;
@@ -211,12 +211,17 @@ nav {
 }
 .navArrow {
   opacity: 0.5;
-  position: relative;
 }
 @media (max-width: 500px) {
   .navArrow {
     top: -100px;
   }
+}
+.navArrow p {
+  transition: transform 0.2;
+  transition: all 1s;
+  opacity: 0.5;
+  animation: fadein 5s;
 }
 .navArrow .arrow {
   transition: transform 0.2;
@@ -252,9 +257,10 @@ nav {
   }
 }
 footer {
+  height: 33%;
   width: 100%;
   margin-top: 75px;
-  padding: 20px 0;
+  padding: 10px 0;
   background: #333333;
   color: white;
   text-align: center;
@@ -277,11 +283,6 @@ footer p a {
 }
 footer p a:hover {
   text-decoration: none;
-}
-@media (max-width: 1550px) {
-  .otFooter {
-    display: none;
-  }
 }
 .home .welcomeBox {
   padding-top: 80px;
@@ -500,11 +501,8 @@ footer p a:hover {
   background-color: #bdc3c7;
   color: #b5deff;
 }
-.teamContainer {
-  height: 800px;
-}
 .teamContainer nav {
-  opacity: 0.95;
+  opacity: 0.9;
 }
 .teamContainer .meetTheTeam {
   margin: 100px 0 5% 5%;
