@@ -1,0 +1,51 @@
+.teamContainer {
+    nav {
+        opacity: .90;
+    }
+    .meetTheTeam {
+        margin: 100px 0 5% 5%;
+        h1 {
+            letter-spacing: 2px;
+            color: #3384c6;
+            opacity: .75;
+        }
+    }
+    .cardLayout {
+        display: flex;
+        @media(max-width: 1550px) {
+            align-items: center;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+        }
+        .card {
+            margin: 0 5%;
+            @media(max-width: 1550px) {
+                margin-bottom: 30px;
+            }
+            h3 {
+                font-size: 2rem;
+                font-family: "Karla";
+            }
+            h4 {
+                font-size: 1.2rem;
+                color: #3384c6;
+            }
+            p {
+                font-size: 1.3rem;
+            }
+            .btn {
+                background-color: white;
+                border: none;
+                transition: all 1s;
+                .btn-primary {
+                    background: none;
+                }
+            }
+            .btn:hover {
+                border: 1px solid #3384c6;
+                transform: scale(1.1);
+            }
+        }
+    }
+}
